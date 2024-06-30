@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-My first project using Javascript
+Play Tic-Tac-Toe for free!!!
