@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #aabeff;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.main{
+    position: fixed;
+}
+
+h1{
+    margin-top: max(2vw,20px);
+    font-size: max(4vw,42px);
+    color: #29146b;
+    color: aqua;
+    text-align: center;
+}
+
+.out{    
+    margin-top: 6vh;
+    margin-bottom: max(1.5vw,15px);
+}
+
+.turn{
+    width: calc(3*max(7vw,80px) + 24px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: max(1.2vw,15px);
+}
+
+#x, #o{
+    width: 45%;
+    text-align: center;
+    border: 2px solid #29146b;
+    border-radius: 10px;
+    font-size: max(2vw,25px);
+    font-weight: 500;
+    background-color: #FFF8F0;
+}
+
+#x{
+    border-bottom: 4px solid #a52a2a;
+}
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(3,max(6vw,80px));
+    grid-template-rows: repeat(3,max(6vw,80px));
+    justify-content: center;
+    grid-gap: 12px;
+}
+
+.game button{
+    border-radius: 20px;
+    background-color: #fff4b5;
+    box-shadow: 0 0 35px 0 rgba(0,0,0,0.3);
+    font-size: max(4vw,38px);
+    font-weight: 500;
+}
+
+.game button:hover{
+    background-color: #eedd80d0;
+}
+
+.extra{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.extra button{
+    padding: max(0.8px,4px) max(1vw,8px);
+    border-radius: 8px;
+    font-size: max(1.4vw,20px);
+    font-weight: 450;
+    background-color: #ff9b37;
+}
+
+.extra button:hover{
+    background-color: #e78c31;
+}
+
+#won{
+    height: 99.9vh;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    background-color: rgba(0,0,0,0.8);
+    visibility: hidden;
+}
+
+#won .out{    
+    background-color: white;
+    padding: 20px;
+}
+
+#won h1{
+    text-align: center;
+    width: 97vw;
+    font-size: max(5.5vw,30px);
+    font-weight: 450;
+    padding: 20px;
+    color: orangered;
+}
+
+@keyframes Animation {
+    from{
+        font-size: max(4vw,38px);
+    }
+    to{
+        font-size: max(4.2vw,40px);
+        color: #009b1a;
+        color: #007914;
+    }
+}
